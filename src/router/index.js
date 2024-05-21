@@ -6,6 +6,7 @@ import CustomerNew from '../components/customers/CustomerNew.vue'
 import CategoryIndex from '../components/categories/CategoryIndex.vue'
 import CategoryNew from '../components/categories/CategoryNew.vue'
 import CategoryEdit from '../components/categories/CategoryEdit.vue'
+import PayModeIndex from '../components/paymodes/PayModeIndex.vue'
 
 const routes = [
   {
@@ -56,6 +57,12 @@ const routes = [
     path: '/categories/:id/edit',
     name: 'editCategory',
     component: CategoryEdit
+  },
+
+  {
+    path: '/paymodes',
+    name: 'paymodes',
+    component: PayModeIndex
   }
 ]
 
