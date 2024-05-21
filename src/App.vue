@@ -6,6 +6,7 @@
       <router-link to="/customers">Customers</router-link> |
       <router-link to="/categories">Categories</router-link> |
       <router-link to="/paymodes">Pay Modes</router-link> |
+      <router-link to="/products">Products</router-link>
     </nav>
     <router-view/>
   </div>
