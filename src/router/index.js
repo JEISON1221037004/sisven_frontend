@@ -10,7 +10,8 @@ import PayModeIndex from '../components/paymodes/PayModeIndex.vue'
 import PayModeNew from '../components/paymodes/PayModeNew.vue';
 import PayModeEdit from '../components/paymodes/PayModeEdit.vue'
 import ProductIndex from '../components/products/ProductIndex.vue'
-import ProductEdit from '../components/products/ProductEdit.vue';
+import ProductEdit from '../components/products/ProductEdit.vue'
+import ProductNew from '../components/products/ProductNew.vue'
 
 const routes = [
   {
@@ -85,6 +86,12 @@ const routes = [
     path: '/products',
     name: 'products',
     component: ProductIndex
+  },
+
+  {
+    path: '/products/new',
+    name: 'newProduct',
+    component: ProductNew
   },
 
   {
