@@ -10,6 +10,7 @@ import PayModeIndex from '../components/paymodes/PayModeIndex.vue'
 import PayModeNew from '../components/paymodes/PayModeNew.vue';
 import PayModeEdit from '../components/paymodes/PayModeEdit.vue'
 import ProductIndex from '../components/products/ProductIndex.vue'
+import ProductEdit from '../components/products/ProductEdit.vue';
 
 const routes = [
   {
@@ -75,16 +76,24 @@ const routes = [
   },
 
   {
-    path: '/categories/:id/edit',
-    name: 'editCategory',
-    component: CategoryEdit
+    path: '/paymodes/:id/edit',
+    name: 'editPayMode',
+    component: PayModeEdit
   },
 
   {
     path: '/products',
     name: 'products',
     component: ProductIndex
+  },
+
+  {
+    path: '/products/:id/edit',
+    name: 'editProduct',
+    component: ProductEdit
   }
+
+  
 ]
 
 const router = createRouter({
