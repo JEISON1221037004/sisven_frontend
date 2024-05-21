@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CustomerIndex from '@/components/customers/CustomerIndex.vue'
 import CustomerEdit from '../components/customers/CustomerEdit.vue'
+import CustomerNew from '../components/customers/CustomerNew.vue'
+import CategoryIndex from '../components/categories/CategoryIndex.vue'
 
 const routes = [
   {
@@ -28,6 +30,18 @@ const routes = [
     path: '/customers/:id/edit',
     name: 'editCustomer',
     component: CustomerEdit
+  },
+
+  {
+    path: '/customers/new',
+    name: 'newCustomer',
+    component: CustomerNew
+  },
+
+  {
+    path: '/categories',
+    name: 'categories',
+    component: CategoryIndex
   }
 ]
 
