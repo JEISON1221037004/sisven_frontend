@@ -5,6 +5,7 @@ import CustomerEdit from '../components/customers/CustomerEdit.vue'
 import CustomerNew from '../components/customers/CustomerNew.vue'
 import CategoryIndex from '../components/categories/CategoryIndex.vue'
 import CategoryNew from '../components/categories/CategoryNew.vue'
+import CategoryEdit from '../components/categories/CategoryEdit.vue'
 
 const routes = [
   {
@@ -49,6 +50,12 @@ const routes = [
     path: '/categories/new',
     name: 'newCategory',
     component: CategoryNew
+  },
+
+  {
+    path: '/categories/:id/edit',
+    name: 'editCategory',
+    component: CategoryEdit
   }
 ]
 
